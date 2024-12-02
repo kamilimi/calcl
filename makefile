@@ -1,10 +1,10 @@
-TGT = c.exe
+TGT = c.out
 GCC = gcc
 
 SRC = src/*.c
 HDS = -Ihds
 
-CFLAGS = -c -Wall
+CFLAGS = -Wall
 
 $(TGT):
 	$(GCC) $(SRC) $(HDS) $(CFLAGS) -o $(TGT)
